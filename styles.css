@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #003f5c; /* Azul royal para Frigopesca */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+/* Cartão de contato */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 1.5rem);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Frigopesca */
+.card:nth-child(1) {
+    border-left: 5px solid #003f5c; /* Azul royal */
+}
+
+/* Chiko Alimentos */
+.card:nth-child(2) {
+    border-left: 5px solid #000; /* Preto */
+}
+
+/* Frigorífico Pescador */
+.card:nth-child(3) {
+    border-left: 5px solid #4c4c4c; /* Cinza escuro */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003f5c; /* Azul royal como cor padrão */
+}
+
+.card:nth-child(2) h2 {
+    color: #000; /* Preto para Chiko Alimentos */
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.card a {
+    color: #007acc; /* Link padrão azul */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card:nth-child(2) a {
+    color: #000; /* Preto para os links da Chiko Alimentos */
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #003f5c; /* Azul royal */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
